@@ -291,72 +291,50 @@ footer {
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
-        gap: 0.5rem;
+        gap: 0.3rem;
         padding: 0.5rem;
+        flex-wrap: nowrap;
+        overflow-x: auto;
     }
     
     nav ul {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0.3rem;
-        justify-content: center;
-        width: 100%;
+        gap: 0.2rem;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        width: auto;
     }
     
     nav li {
-        flex: 1;
-        min-width: fit-content;
+        flex: 0 0 auto;
     }
     
     nav a {
-        padding: 0.4rem 0.6rem;
-        font-size: 0.8rem;
-        text-align: center;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.75rem;
         white-space: nowrap;
-        display: block;
     }
     
     .logo {
-        font-size: 1.5rem;
-        margin-right: 0.5rem;
+        font-size: 1.3rem;
+        margin-right: 0.3rem;
+        flex-shrink: 0;
     }
     
     main {
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
     
     .hero,
     .tables-section,
     .news-section,
     .music-section {
-        padding: 1.5rem 1rem;
+        padding: 1rem 0.5rem;
     }
     
     .news-grid,
     .music-grid {
         grid-template-columns: 1fr;
     }
-    
-    /* Дополнительные стили для компактных таблиц на мобильных */
-    .tables-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .compact-table {
-        font-size: 0.75rem;
-    }
-    
-    .compact-table th,
-    .compact-table td {
-        padding: 0.2rem 0.3rem;
-    }
-}
-    
-    .news-grid,
-    .music-grid {
-        grid-template-columns: 1fr;
-    }
-
 }
