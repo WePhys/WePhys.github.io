@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WePhys - Таблицы</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Компактные стили для таблиц */
+        .compact-table {
+            font-size: 0.8rem;
+            width: 100%;
+        }
+        
+        .compact-table th,
+        .compact-table td {
+            padding: 0.3rem 0.4rem;
+            line-height: 1.2;
+        }
+        
+        .tables-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .table-container {
+            margin-bottom: 0;
+        }
+        
+        .table-container h2 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem;
+            background: #4a5568;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .formulas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.8rem;
+        }
+        
+        .compact-grade {
+            padding: 0.8rem;
+            margin-bottom: 0;
+        }
+        
+        .compact-grade h3 {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .compact-formula {
+            padding: 0.4rem;
+            margin: 0.2rem 0;
+            font-size: 0.8rem;
+            background: #f8fafc;
+        }
+        
+        /* Уменьшаем общие отступы */
+        .tables-section {
+            padding: 1.5rem;
+        }
+        
+        .tables-section h1 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .formulas-section h2 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Стили для компактных таблиц */
+        table {
+            border-collapse: collapse;
+        }
+        
+        .compact-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+        
+        .compact-table tr:hover {
+            background: #e2e8f0;
+        }
+        
+        @media (max-width: 768px) {
+            .tables-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tables-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WePhys</div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tables.html" class="active">Таблицы и Формулы</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="music.html">Музыка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tables-section">
+            <h1>Физические таблицы и формулы</h1>
+
+            <div class="tables-grid">
+                <div class="table-container">
+                    <h2>Плотности жидкостей (кг/м³)</h2>
+                    <table class="compact-table">
+                        <tr><th>Вещество</th><th>Плотность</th></tr>
+                        <tr><td>Вода (4°C)</td><td>1000</td></tr>
+                        <tr><td>Морская вода</td><td>1025</td></tr>
+                        <tr><td>Ртуть</td><td>13546</td></tr>
+                        <tr><td>Серная кислота</td><td>1840</td></tr>
+                        <tr><td>Масло моторное</td><td>900</td></tr>
+                        <tr><td>Бензин</td><td>750</td></tr>
+                        <tr><td>Керосин</td><td>800</td></tr>
+                        <tr><td>Спирт этиловый</td><td>789</td></tr>
+                        <tr><td>Глицерин</td><td>1260</td></tr>
+                        <tr><td>Оливковое масло</td><td>920</td></tr>
+                        <tr><td>Мёд</td><td>1420</td></tr>
+                        <tr><td>Молоко</td><td>1030</td></tr>
+                        <tr><td>Ртуть (20°C)</td><td>13580</td></tr>
+                        <tr><td>Ацетон</td><td>790</td></tr>
+                        <tr><td>Хлороформ</td><td>1489</td></tr>
+                        <tr><td>Эфир</td><td>714</td></tr>
+                        <tr><td>Бензол</td><td>879</td></tr>
+                        <tr><td>Толуол</td><td>867</td></tr>
+                        <tr><td>Скипидар</td><td>860</td></tr>
+                        <tr><td>Антифриз</td><td>1110</td></tr>
+                        <tr><td>Жидкий водород</td><td>71</td></tr>
+                        <tr><td>Жидкий гелий</td><td>125</td></tr>
+                        <tr><td>Жидкий азот</td><td>808</td></tr>
+                        <tr><td>Жидкий кислород</td><td>1141</td></tr>
+                        <tr><td>Сероуглерод</td><td>1261</td></tr>
+                        <tr><td>Нитробензол</td><td>1203</td></tr>
+                        <tr><td>Анилин</td><td>1021</td></tr>
+                        <tr><td>Дихлорэтан</td><td>1253</td></tr>
+                        <tr><td>Тетрахлорид углерода</td><td>1594</td></tr>
+                        <tr><td>Фреон-12</td><td>1314</td></tr>
+                    </table>
+                </div>
+
+                <div class="table-container">
+                    <h2>Плотности твёрдых тел (кг/м³)</h2>
+                    <table class="compact-table">
+                        <tr><th>Материал</th><th>Плотность</th></tr>
+                        <tr><td>Алюминий</td><td>2700</td></tr>
+                        <tr><td>Железо</td><td>7870</td></tr>
+                        <tr><td>Сталь</td><td>7850</td></tr>
+                        <tr><td>Медь</td><td>8960</td></tr>
+                        <tr><td>Свинец</td><td>11340</td></tr>
+                        <tr><td>Золото</td><td>19320</td></tr>
+                        <tr><td>Серебро</td><td>10500</td></tr>
+                        <tr><td>Платина</td><td>21450</td></tr>
+                        <tr><td>Олово</td><td>7310</td></tr>
+                        <tr><td>Цинк</td><td>7140</td></tr>
+                        <tr><td>Титан</td><td>4500</td></tr>
+                        <tr><td>Вольфрам</td><td>19300</td></tr>
+                        <tr><td>Никель</td><td>8900</td></tr>
+                        <tr><td>Латунь</td><td>8500</td></tr>
+                        <tr><td>Бронза</td><td>8800</td></tr>
+                        <tr><td>Чугун</td><td>7000</td></tr>
+                        <tr><td>Магний</td><td>1740</td></tr>
+                        <tr><td>Кремний</td><td>2330</td></tr>
+                        <tr><td>Графит</td><td>2250</td></tr>
+                        <tr><td>Алмаз</td><td>3510</td></tr>
+                        <tr><td>Лёд (0°C)</td><td>917</td></tr>
+                        <tr><td>Стекло</td><td>2500</td></tr>
+                        <tr><td>Фарфор</td><td>2300</td></tr>
+                        <tr><td>Кирпич</td><td>1800</td></tr>
+                        <tr><td>Бетон</td><td>2300</td></tr>
+                        <tr><td>Дуб</td><td>700</td></tr>
+                        <tr><td>Сосна</td><td>500</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="formulas-section">
+                <h2>Физические формулы по классам</h2>
+                
+                <div class="formulas-grid">
+                    <div class="grade-section compact-grade">
+                        <h3>7 класс</h3>
+                        <div class="formula compact-formula">P = mg (Вес тела)</div>
+                        <div class="formula compact-formula">p = F/S (Давление)</div>
+                        <div class="formula compact-formula">p = ρgh (Гидростатическое давление)</div>
+                        <div class="formula compact-formula">A = Fs (Механическая работа)</div>
+                        <div class="formula compact-formula">N = A/t (Мощность)</div>
+                    </div>
+
+                    <div class="grade-section compact-grade">
+                        <h3>8 класс</h3>
+                        <div class="formula compact-formula">Q = cmΔt (Количество теплоты)</div>
+                        <div class="formula compact-formula">η = (Aполез/Qзатр)×100% (КПД)</div>
+                        <div class="formula compact-formula">I = U/R (Закон Ома)</div>
+                        <div class="formula compact-formula">A = IUt (Работа тока)</div>
+                        <div class="formula compact-formula">P = UI (Мощность тока)</div>
+                    </div>
+
+                    <div class="grade-section compact-grade">
+                        <h3>9 класс</h3>
+                        <div class="formula compact-formula">v = v₀ + at (Скорость при РУД)</div>
+                        <div class="formula compact-formula">s = v₀t + at²/2 (Путь при РУД)</div>
+                        <div class="formula compact-formula">F = ma (Второй закон Ньютона)</div>
+                        <div class="formula compact-formula">p = mv (Импульс тела)</div>
+                        <div class="formula compact-formula">Eк = mv²/2 (Кинетическая энергия)</div>
+                    </div>
+
+                    <div class="grade-section compact-grade">
+                        <h3>10 класс</h3>
+                        <div class="formula compact-formula">F = Gm₁m₂/r² (Закон всемирного тяготения)</div>
+                        <div class="formula compact-formula">Eп = mgh (Потенциальная энергия)</div>
+                        <div class="formula compact-formula">M = FL (Момент силы)</div>
+                        <div class="formula compact-formula">pV = νRT (Уравнение Менделеева-Клапейрона)</div>
+                        <div class="formula compact-formula">ΔU = Q - A (Первый закон термодинамики)</div>
+                    </div>
+
+                    <div class="grade-section compact-grade">
+                        <h3>11 класс</h3>
+                        <div class="formula compact-formula">F = k|q₁q₂|/r² (Закон Кулона)</div>
+                        <div class="formula compact-formula">E = k|q|/r² (Напряжённость поля)</div>
+                        <div class="formula compact-formula">Φ = BScosα (Магнитный поток)</div>
+                        <div class="formula compact-formula">E = hν (Энергия фотона)</div>
+                        <div class="formula compact-formula">λ = h/p (Длина волны де Бройля)</div>
+                    </div>
+
+                    <div class="grade-section compact-grade">
+                        <h3>Университетский уровень</h3>
+                        <div class="formula compact-formula">∇·E = ρ/ε₀ (Теорема Гаусса)</div>
+                        <div class="formula compact-formula">∇×E = -∂B/∂t (Закон Фарадея)</div>
+                        <div class="formula compact-formula">iℏ∂Ψ/∂t = ĤΨ (Уравнение Шрёдингера)</div>
+                        <div class="formula compact-formula">E = mc² (Эквивалентность массы и энергии)</div>
+                        <div class="formula compact-formula">S = k ln Ω (Формула Больцмана)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WePhys Corporation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
